@@ -1,0 +1,435 @@
+/*
+Theme Name: BDC
+Theme URI: http://bdc.com
+Author: Gene Guy
+Author URI: http://geneguy.com/
+Description: A custom wordpress theme for BDC
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: BDC
+
+*/
+
+
+
+/* --------------------------------------
+=========================================
+GLOBAL STYLES
+=========================================
+-----------------------------------------*/
+html {
+    font-size: 62.5%
+}
+
+
+a {
+    -webkit-transition: all ease 0.25s;
+            transition: all ease 0.25s;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.btn:focus,
+.btn:active {
+    outline: inherit;
+}
+
+
+
+
+
+
+/* PRE LOADER */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fefefe;
+    z-index: 99999;
+    height: 100%;
+    width: 100%;
+    overflow: hidden !important;
+}
+
+.status {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url(../images/loading.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+            background-size: cover;
+    margin: -20px 0 0 -20px;
+}
+
+
+/*---------------------------------------
+   NAVIGATION              
+-----------------------------------------*/
+.navbar-default {
+background-color: #FFF;
+border-color: #e7e7e7;
+}
+
+.navbar {
+position: relative;
+min-height: 70px;
+margin-bottom: 0px;
+
+}
+
+.navbar-nav>li>a {
+padding-top: 25px;
+padding-bottom: 25px;
+}
+
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+background-color: #fff;
+border-color: #464d57;
+}
+
+.dropdown-header {
+display: block;
+padding: 0px 20px;
+font-size: 12px;
+line-height: 1.42857143;
+color: #999;
+}
+
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {
+color: #262626;
+text-decoration: none;
+outline: 0;
+background-color: #f5f5f5;
+}
+
+/*---------------------------------------
+   LINKS                
+-----------------------------------------*/
+a {
+color: #d9534f;
+text-decoration: none;
+}
+
+a:hover {
+color: #d2322d;
+text-decoration: none;
+}
+
+/*---------------------------------------
+   BUTTONS                
+-----------------------------------------*/
+.btn-default {
+color: #eee;
+background-color: #464d57;
+border-color: #ccc;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+color: #333;
+background-color: #ebebeb;
+border-color: #adadad;
+}
+
+/*---------------------------------------
+   TYPOGRAPHY                
+-----------------------------------------*/
+
+
+body {
+font-family: 'Open Sans', sans-serif;
+font-size: 1.6rem;
+color: #777;
+line-height: 1.8;
+
+}
+
+/* NAVIGATION */
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+color: #777;
+
+
+}
+
+.navbar-default .navbar-nav>li>a {
+color: #777;
+font-weight: 600;
+font-size: 1.3rem;
+text-transform:uppercase;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+color: #777;
+background-color: transparent;
+
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+color: #555;
+background-color: #e5e5e5;
+border-top: solid 3px #464d57;
+}
+
+.navbar-default .navbar-nav>li>a {
+color: #777;
+font-weight: 600;
+font-size: 1.3rem;
+text-transform: uppercase;
+border-top: solid 3px #fff;
+}
+
+/* HEADINGS */
+
+
+
+h1 {
+    font-size: 4.8rem;
+    line-height: 4.688rem;
+	font-weight: 700;
+	
+}
+
+h2 {
+    font-size: 4.0rem;
+    line-height: 5.0rem;
+	font-weight: 600;
+}
+
+h3 {
+    font-size: 3.0rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 2.0rem;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* FOOTER */
+
+.copyright {
+	 font-size: 1.2rem;
+   
+}
+
+footer .footerLinks {
+	 font-size: 1.2rem;
+   
+}
+
+/*---------------------------------------
+   SLIDER REVOLUTION              
+-----------------------------------------*/
+
+.sliderArea {
+	margin: 0 0 50px 0;
+	
+}
+/*---------------------------------------
+   BOOTSTRAP SLIDER               
+-----------------------------------------*/
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+display: block;
+height: auto;
+max-width: 100%;
+line-height: 1;
+width: 100%; // Add this
+}
+
+.carousel-control.left {
+background-image: none;
+background-image: none;
+background-repeat: none;
+
+}
+
+
+.carousel-control.right {
+left: auto;
+right: 0;
+background-image: none;
+background-image: none;
+background-repeat: none;
+}
+/*---------------------------------------
+   CUSTOM BUTTON              
+-----------------------------------------*/
+
+
+
+
+/*---------------------------------------
+   TEXTS               
+-----------------------------------------*/
+.lead {
+
+line-height: 1.7;
+}
+
+
+/*---------------------------------------
+   SECTIONS          
+-----------------------------------------*/
+
+
+/*---------------------------------------
+   LINES          
+-----------------------------------------*/
+
+
+/*---------------------------------------
+=========================================
+ **   SECTION STYLES                
+=========================================
+-----------------------------------------*/
+
+
+/*---------------------------------------
+   SECTION:  HOME                 
+-----------------------------------------*/
+/* HOME PAGE MARKETING */
+
+.marketingMessage {
+	margin: 50px 0 70px 0;
+	
+}
+
+.marketingMessage p {
+	font-size: 1.8rem;
+	line-height: 1.8;
+	
+}
+
+.marketing {
+	margin-bottom: 70px;
+	
+}
+
+.marketing p {
+	font-size: 1.6rem;
+	line-height: 1.8;
+	
+}
+
+/*---------------------------------------
+   SECTION:  PAGE FULL WIDTH                 
+-----------------------------------------*/
+
+.pageFullWidth {
+	margin: 50px 0 60px 0;
+	
+}
+
+.pageFullWidth p {
+	font-size: 1.6rem;
+	line-height: 2.0;
+	margin: 0 0 35px 0;
+}
+
+/*---------------------------------------
+   SECTION:  PAGE WITH SIDEBAR                
+-----------------------------------------*/
+
+
+.pageMainContentArea {
+	margin: 50px 0 60px 0;
+	
+}
+
+.pageMainContent p {
+	font-size: 1.6rem;
+	line-height: 2.0;
+	margin: 0 0 35px 0;
+}
+
+.pageSideBar {
+	margin: 10px 0 35px 0;
+	
+}
+
+.pageSideBar p {
+	font-size: 1.6rem;
+	line-height: 2.0;
+	margin: 0 0 35px 0;
+}
+
+
+
+/*---------------------------------------
+   SECTION:  WIDGETS                 
+-----------------------------------------*/
+
+.widgetArea {
+	margin: 80px 0 80px 0;
+	
+}
+
+.widgetArea h4{
+	font-size: 2.2rem;
+	font-weight: 600;
+	text-transform:uppercase;
+	
+}
+
+.widgetArea p{
+	line-height: 2.4rem;
+	
+}
+
+/* TOP BAR WITH NAVIGATION */
+
+
+
+/*---------------------------------------
+   SECTION:  FEATURES                 
+-----------------------------------------*/
+
+
+/*---------------------------------------
+   SECTION:  TESTIMONIALS                 
+-----------------------------------------*/
+
+
+
+/*---------------------------------------
+   SECTION:  SERVICES           
+-----------------------------------------*/
+
+
+
+/*---------------------------------------
+   SECTION:  FOOTER                
+-----------------------------------------*/
+footer {
+	margin:0 0 60px 0;
+	
+}
+
+
+
+
+.sliderSection .container-fluid {
+		margin: 0px auto 50px auto;
+		padding: 0;
+		background-image: url(images/hero-about-office.jpg);
+		background-size: cover;
+		max-height: 750px;
+		
+		
+	
+}
